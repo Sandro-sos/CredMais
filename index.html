@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Cred+ oferece soluções de crédito consignado para trabalhadores CLT e beneficiários do INSS. Faça uma simulação gratuita.">
+
+    <title>Cred+ | Soluções em Crédito Consignado</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Cred+</h1>
+            <p>Soluções inteligentes em crédito</p>
+        </div>
+
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Nossas soluções</a>
+            <a href="#simulador">Simulação</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Crédito acessível, atendimento de confiança.</h2>
+
+            <p>
+                Na Cred+, trabalhamos para aproximar você de
+                soluções financeiras adequadas às suas necessidades.
+                Oferecemos atendimento personalizado para quem busca
+                crédito consignado CLT ou INSS.
+            </p>
+
+            <p>
+                Consulte suas possibilidades e faça uma simulação
+                sem compromisso.
+            </p>
+
+            <a href="#simulador">Faça sua simulação gratuita</a>
+            <a href="#contato">Fale com um consultor</a>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossas soluções financeiras</h2>
+
+            <article>
+                <h3>Crédito Consignado CLT</h3>
+
+                <p>
+                    Soluções de crédito destinadas a trabalhadores
+                    com carteira assinada, conforme critérios de
+                    elegibilidade, margem disponível e condições
+                    da instituição financeira.
+                </p>
+
+                <a href="#contato">Consultar condições</a>
+            </article>
+
+            <article>
+                <h3>Crédito Consignado INSS</h3>
+
+                <p>
+                    Alternativas de crédito para aposentados e
+                    pensionistas do INSS, com condições que devem
+                    ser consultadas individualmente.
+                </p>
+
+                <a href="#contato">Tenho interesse</a>
+            </article>
+
+            <article>
+                <h3>Portabilidade de Crédito</h3>
+
+                <p>
+                    Consulte a possibilidade de transferir seu
+                    contrato de empréstimo para outra instituição,
+                    buscando condições mais adequadas.
+                </p>
+
+                <a href="#contato">Saiba mais</a>
+            </article>
+        </section>
+
+        <section id="simulador">
+            <h2>Simule seu crédito</h2>
+
+            <p>
+                Informe os dados abaixo para visualizar uma
+                estimativa inicial do valor das parcelas,
+                sem considerar juros e encargos.
+            </p>
+
+            <form id="formSimulador">
+
+                <label for="tipo">
+                    Modalidade de crédito:
+                </label>
+
+                <select id="tipo" required>
+                    <option value="CLT">Consignado CLT</option>
+                    <option value="INSS">Consignado INSS</option>
+                </select>
+
+                <label for="valor">
+                    Valor desejado (R$):
+                </label>
+
+                <input
+                    type="number"
+                    id="valor"
+                    placeholder="Ex: 5000"
+                    min="1"
+                    step="0.01"
+                    required
+                >
+
+                <label for="parcelas">
+                    Quantidade de parcelas:
+                </label>
+
+                <select id="parcelas" required>
+                    <option value="12">12 parcelas</option>
+                    <option value="24">24 parcelas</option>
+                    <option value="36">36 parcelas</option>
+                    <option value="48">48 parcelas</option>
+                </select>
+
+                <button type="submit">
+                    Calcular simulação
+                </button>
+
+            </form>
+
+            <div id="resultado" role="status" aria-live="polite"></div>
+
+            <p>
+                <small>
+                    Importante: esta é apenas uma divisão ilustrativa
+                    do valor solicitado pelo número de parcelas.
+                    Não representa uma proposta de empréstimo.
+                    Juros, tarifas, CET, margem consignável,
+                    elegibilidade e aprovação dependem da análise
+                    da instituição financeira.
+                </small>
+            </p>
+        </section>
+
+        <section id="sobre">
+            <h2>Conheça a Cred+</h2>
+
+            <p>
+                A Cred+ tem como objetivo facilitar o acesso
+                à informação e aproximar pessoas de soluções
+                financeiras disponíveis no mercado.
+            </p>
+
+            <p>
+                Trabalhamos com foco em transparência,
+                responsabilidade e atendimento humanizado.
+            </p>
+
+            <h3>Nossos compromissos</h3>
+
+            <ul>
+                <li>Atendimento personalizado.</li>
+                <li>Transparência nas informações.</li>
+                <li>Simulações sem compromisso.</li>
+                <li>Orientação sobre modalidades de crédito.</li>
+                <li>Respeito às condições de cada cliente.</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Solicite seu atendimento</h2>
+
+            <p>
+                Preencha seus dados e entre em contato
+                com nossa equipe pelo WhatsApp.
+            </p>
+
+            <form id="formContato">
+
+                <label for="nome">
+                    Nome completo:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome completo"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="telefone">
+                    Seu WhatsApp:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="(00) 00000-0000"
+                    autocomplete="tel"
+                    required
+                >
+
+                <label for="modalidade">
+                    Modalidade desejada:
+                </label>
+
+                <select id="modalidade" required>
+                    <option value="Consignado CLT">
+                        Consignado CLT
+                    </option>
+
+                    <option value="Consignado INSS">
+                        Consignado INSS
+                    </option>
+
+                    <option value="Portabilidade">
+                        Portabilidade
+                    </option>
+                </select>
+
+                <button type="submit">
+                    Solicitar atendimento pelo WhatsApp
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Cred+ | Crédito Inteligente</h2>
+
+        <p>
+            Soluções financeiras com transparência,
+            responsabilidade e atendimento personalizado.
+        </p>
+
+        <p>
+            Todas as operações estão sujeitas à análise,
+            elegibilidade e aprovação da instituição financeira.
+        </p>
+
+        <p>
+            © <span id="ano"></span> Cred+.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script>
+
+        const numeroWhatsApp = "555199936414";
+
+        // Formatação de valores monetários
+        function formatarMoeda(valor) {
+            return valor.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+        }
+
+        // Simulador de crédito
+        document.getElementById("formSimulador")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const valor = Number(
+                    document.getElementById("valor").value
+                );
+
+                const parcelas = Number(
+                    document.getElementById("parcelas").value
+                );
+
+                const tipo = document.getElementById("tipo").value;
+
+                const resultado = document.getElementById("resultado");
+
+                if (!Number.isFinite(valor) || valor <= 0) {
+                    resultado.textContent =
+                        "Informe um valor válido para continuar.";
+                    return;
+                }
+
+                const valorParcela = valor / parcelas;
+
+                const total = valorParcela * parcelas;
+
+                resultado.innerHTML = `
+                    <h3>Resultado da simulação</h3>
+
+                    <p>
+                        <strong>Modalidade:</strong>
+                        ${tipo}
+                    </p>
+
+                    <p>
+                        <strong>Valor solicitado:</strong>
+                        ${formatarMoeda(valor)}
+                    </p>
+
+                    <p>
+                        <strong>Quantidade de parcelas:</strong>
+                        ${parcelas}x
+                    </p>
+
+                    <p>
+                        <strong>Valor base por parcela:</strong>
+                        ${formatarMoeda(valorParcela)}
+                    </p>
+
+                    <p>
+                        <strong>Valor total:</strong>
+                        ${formatarMoeda(total)}
+                    </p>
+
+                    <small>
+                        Estimativa sem juros e encargos.
+                        Consulte as condições reais com um consultor.
+                    </small>
+                `;
+
+            });
+
+        // Formulário de atendimento
+        document.getElementById("formContato")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const nome = document
+                    .getElementById("nome")
+                    .value.trim();
+
+                const telefone = document
+                    .getElementById("telefone")
+                    .value.trim();
+
+                const modalidade = document
+                    .getElementById("modalidade")
+                    .value;
+
+                if (!nome || !telefone) {
+                    alert("Preencha todos os campos.");
+                    return;
+                }
+
+                const mensagem =
+                    `Olá! Meu nome é ${nome}.
+
+Meu WhatsApp: ${telefone}
+
+Tenho interesse em: ${modalidade}.
+
+Gostaria de receber mais informações sobre as condições disponíveis.`;
+
+                const url =
+                    `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+                window.open(url, "_blank", "noopener,noreferrer");
+
+            });
+
+        // Ano automático no rodapé
+        document.getElementById("ano").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
